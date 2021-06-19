@@ -1,0 +1,68 @@
+.container {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    .input-form{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 20px 0;
+        .input-title {
+            width: 40%;
+            padding: 12px;
+            border: 3px solid #cccccc;
+            margin-bottom: 12px;
+        }
+        .text-area {
+            width: 40%;
+            height: 120px;
+            border: 3px solid #cccccc;
+            padding: 12px;
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        .save-btn {
+            padding: 12px 50px;
+            border: 2px solid green;
+            color:white;
+            background-color: #4CAF50;
+            text-transform: uppercase;
+            &.cancel {
+                color:white;
+                background-color: orange;
+            }
+        }
+        .action-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+        }
+    }
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+        border-radius: 5px;
+        padding: 16px;
+        margin: auto;
+        transition: all ease 0.35s;
+        .delete {
+            color:white;
+            background-color: gray;
+            padding: 8px;
+            cursor: pointer;
+            &:hover {
+                cursor: pointer;
+                opacity: .8;
+                background-color: red; 
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            opacity: .8;
+            background-color: aqua; 
+            transform: translateY(-2px);
+        }
+    }
+}
